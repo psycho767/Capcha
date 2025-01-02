@@ -8,10 +8,10 @@
 
 </head>
 <body>
-    <form action="/login" method="POST">
-        <input type="text" placeholder="username" />
-        <input type="password" placeholder="password" />
-        <div class="cf-turnstile" ></div>
+    <form action="" method="POST">
+        <input type="text" placeholder="username" /><br>
+        <input type="password" placeholder="password" /></br>
+        <div class="cf-turnstile" id="cf-turnstile" style="width:50px"></div></br>
         <button type="submit" value="Submit">Log in</button>
       </form>
 
@@ -21,7 +21,7 @@
       <script>
         window.onloadTurnstileCallback = function () {
     turnstile.render("#cf-turnstile", {
-    sitekey: '0x4AAAAAAA4UhbzJZf7eZA_JuTBVWaauhVE',
+    sitekey: "0x4AAAAAAA4UhbzJZf7eZA_JuTBVWaauhVE",
     callback: function (token) {
       console.log(`Challenge Success ${token}`);
     },
